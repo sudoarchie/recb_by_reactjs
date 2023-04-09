@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.heading {
+  /* width: 100vw */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Oswald', sans-serif;
+  justify-content: space-evenly;
+  background-color: rgb(71, 71, 190);
+  font-weight: 800;
+  font-size: 20px;
+  /*font-style: italic; */
+  width: 100vw;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.navelem {
+  align-self: center;
+  list-style: none;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+
+}
+
+.navelem:hover {
+  background-color: white;
+  color: rgb(71, 71, 190);
+  border-style: solid;
+  border-radius: 20px;
+  border-color: blue;
+  border-width: 2px;
+}
+
+#submenu {
+  display: none;
+  list-style: none;
+  position: relative;
+}
+
+.submenuelem {
+  border: 2px solid royalblue;
+  margin-top: 2px;
+  border-radius: 10px;
+  padding-left: 2ch;
+  padding-right: 2ch;
+}
+
+.submenuelem:hover {
+  background-color: wheat;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navelem:hover ul#submenu {
+  display: block;
+  align-self: initial;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navlinks {
+  text-decoration: none;
+  color: ;
+}
+
+.image1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+  border: 2px solid red;
+  margin: auto;
+  animation-name: imagechanger;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  opacity: 90%;
+  display: block;
+  transition: 1s;
+  transition-property: all;
+
+
+}
+
+.image1text {
+  font-family: 'Oswald', sans-serif;
+
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+}
+
+@keyframes imagechanger {
+  0% {
+      background-image: url(https://www.iitb.ac.in/sites/www.iitb.ac.in/files/styles/sliderblock/public/slider/lead-boy.jpg?itok=cmDwEruM);
+      color: black;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  25% {
+      background-image: url(https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1674844478~exp=1674845078~hmac=4e4b528792c25f038fb8e2f5d850da176dea3da72d538df97dbea533f0f3a2d6);
+      color: white;
   }
+
+  50% {
+      background-image: url(https://img.freepik.com/free-vector/stream-binary-code-design_53876-97406.jpg?w=740&t=st=1674844503~exp=1674845103~hmac=e88baee92415078b630ac69fc6ee650dc4c795f195fb5e7f363938552ba8a26e);
+      color: white;
+  }
+
+  75% {
+      background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80);
+      color: white;
+  }
+
+  100% {
+      background-image: url(https://img.freepik.com/free-photo/3d-render-code-testing-functional-test-usability_107791-16607.jpg?t=st=1674844471~exp=1674845071~hmac=186dee84e70448fd512665b42b445efdc1d48b053508e3d424e503d84cfd026d);
+      color: white;
+  }
+
+}
+
+.aboutus {
+  border: 3px solid blue;
+  width: 70vw;
+  padding: 20px;
+}
+
+
+.aboutustext {
+  font-family: 'Lobster', cursive;
+  font-weight: 300;
+  color: rgb(40, 78, 192);
+}
+
+.aboutusart {
+  font-family: ;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+#aboutusbutton {
+  color: tomato;
+  border: 2px solid tomato;
+  padding-left: 1ch;
+  padding-right: 1ch;
+  background-color: white;
+  font-size: 18px;
+}
+
+#aboutusbutton:hover {
+  background-color: tomato;
+  color: white;
+  box-shadow: 5px 5px 5px blue;
+}
+
+.aside {
+  border: 2px solid green;
+  width: 30vw;
+  padding: 2ch;
+  order: 2;
+  justify-items: center;
+  text-align: justify;
+}
+
+.asidelem {
+}
+
+.mainarea {
+  display: flex;
+}
+.asideul{
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: 700;
+} 
+.asidelemli{
+  border: 2px solid royalblue;
+  margin: 2px;
+  padding: 2px;
+  text-align: center;
+  border-radius: 20px;
+}
+.asidelemlink:hover{
+  color: white;
+  background-color: royalblue;
+  
+}
+.asidelemlink{
+  color: royalblue;
+  text-decoration: none;
 }
