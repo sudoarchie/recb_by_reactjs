@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { list, Faculty } from "./constant";
+import { list, Faculty, Staff, Media, Alumni,Industry, Resources} from "./constant";
 function App() {
   return (
     <div>
@@ -37,171 +37,64 @@ function App() {
           <li className="navelem">
             Staff
             <ul id="submenu">
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Staff Handbook
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Prospective Staff
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Current Staff
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Retired Staff
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Internal Pages
-                </a>
-              </li>
+            {Staff.map((info) => (
+                <li className="submenuelem">
+                  <a href="#" className="navlinks">
+                    {info.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </li>
           <li className="navelem">
             Media
             <ul id="submenu">
-              <li className="submenuelem">
+              {Media.map((info)=>(
+                <li className="submenuelem">
                 <a href="#" className="navlinks">
-                  Public Relation Office
+                  {info.name}
                 </a>
               </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Social Media Policy
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  News Hub
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Photo Gallery
-                </a>
-              </li>
+              ))}
+              
             </ul>
           </li>
           <li className="navelem">
             Alumni
             <ul id="submenu">
-              <li className="submenuelem">
+              {Alumni.map((info)=>(
+                <li className="submenuelem">
                 <a href="#" className="navlinks">
-                  RECB Alumni Office
+                  {info.name}
                 </a>
               </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Alumni Association
-                </a>
-              </li>
+              )
+              )}
+
             </ul>
           </li>
           <li className="navelem">
             Industry
             <ul id="submenu">
-              <li className="submenuelem">
+              {Industry.map((info)=>(
+                <li className="submenuelem">
                 <a href="#" className="navlinks">
-                  RECB Research Park
+                {info.name}
                 </a>
               </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  SINE
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Consultancy and Research
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Continuing Education
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Analytical Measurements
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Technology Transfer & Licensing
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Doner Relationship
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Placements at RECB
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Vendor's Corner
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Tenders
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  GST Registration Details
-                </a>
-              </li>
+              ))}
             </ul>
           </li>
           <li className="navelem">
             Resources
             <ul id="submenu">
-              <li className="submenuelem">
+              {Resources.map((info)=>(
+                <li className="submenuelem">
                 <a href="#" className="navlinks">
-                  Institute Policies
+                  {info.name}
                 </a>
               </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Faculties at RECB
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Donor Relation Programme
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  IoE
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Gender cell
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Emergency Contact
-                </a>
-              </li>
-              <li className="submenuelem">
-                <a href="#" className="navlinks">
-                  Event Calender
-                </a>
-              </li>
+              ))}
             </ul>
           </li>
         </ul>
