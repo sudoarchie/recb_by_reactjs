@@ -25,8 +25,8 @@ function App() {
           <li className="navelem">
             Faculty
             <ul id="submenu">
-              {Faculty.map((info) => (
-                <li className="submenuelem">
+              {Faculty.map((info,index) => (
+                <li className="submenuelem" key={index}>
                   <a href="#" className="navlinks">
                     {info.name}
                   </a>
@@ -37,8 +37,8 @@ function App() {
           <li className="navelem">
             Staff
             <ul id="submenu">
-            {Staff.map((info) => (
-                <li className="submenuelem">
+            {Staff.map((info,index) => (
+                <li className="submenuelem" key={index}>
                   <a href="#" className="navlinks">
                     {info.name}
                   </a>
@@ -49,8 +49,8 @@ function App() {
           <li className="navelem">
             Media
             <ul id="submenu">
-              {Media.map((info)=>(
-                <li className="submenuelem">
+              {Media.map((info,index)=>(
+                <li className="submenuelem" key="index">
                 <a href="#" className="navlinks">
                   {info.name}
                 </a>
@@ -62,8 +62,8 @@ function App() {
           <li className="navelem">
             Alumni
             <ul id="submenu">
-              {Alumni.map((info)=>(
-                <li className="submenuelem">
+              {Alumni.map((info,index)=>(
+                <li className="submenuelem" key="index">
                 <a href="#" className="navlinks">
                   {info.name}
                 </a>
@@ -76,8 +76,8 @@ function App() {
           <li className="navelem">
             Industry
             <ul id="submenu">
-              {Industry.map((info)=>(
-                <li className="submenuelem">
+              {Industry.map((info,index)=>(
+                <li className="submenuelem" key="index">
                 <a href="#" className="navlinks">
                 {info.name}
                 </a>
@@ -88,8 +88,8 @@ function App() {
           <li className="navelem">
             Resources
             <ul id="submenu">
-              {Resources.map((info)=>(
-                <li className="submenuelem">
+              {Resources.map((info,index)=>(
+                <li className="submenuelem" key="index">
                 <a href="#" className="navlinks">
                   {info.name}
                 </a>
