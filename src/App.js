@@ -13,8 +13,8 @@ function App() {
           <li className="navelem">
             Students
             <ul id="submenu">
-              {list.map((info) => (
-                <li className="submenuelem">
+              {list.map((info,index) => (
+                <li className="submenuelem" key={index}>
                   <a href="#" className="navlinks">
                     {info.name}
                   </a>
