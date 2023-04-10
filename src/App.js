@@ -14,8 +14,8 @@ function App() {
           <li className="navelem">
             Students
             <ul id="submenu">
-              {list.map((info, index,index) => (
-                <li className="submenuelem" key={index} key={index}>
+              {list.map((info,index) => (
+                <li className="submenuelem" key={index}>
                   <a href="#" className="navlinks">
                     {info.name}
                   </a>
